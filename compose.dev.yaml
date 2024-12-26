@@ -1,0 +1,8 @@
+services:
+  client:
+    build: .
+    ports:
+      - 8080:5173
+    volumes:
+      - ./src:/app/src
+    command: npm run dev
